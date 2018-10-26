@@ -1,11 +1,37 @@
 version: 0.2
 
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
 phases:
-  post_build:
+  #install:
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
     commands:
-      - mvn package
-      - mv target/my-web-app.war my-web-app.war
-artifacts:
-  files:
-    - my-web-app.war
-    - .ebextensions/**/*
+      echo "Testing"
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
